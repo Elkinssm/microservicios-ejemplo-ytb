@@ -4,7 +4,19 @@ spring:
       ddl-auto: update
     show-sql: true
     generate-ddl: true
+
   datasource:
     url: jdbc:mysql://localhost:3306/bookingdb
     username: root
     password: admin2023
+
+  application:
+    name: booking-microservice
+
+server:
+  port: 0
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+

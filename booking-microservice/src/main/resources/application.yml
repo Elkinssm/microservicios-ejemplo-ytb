@@ -1,17 +1,15 @@
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    generate-ddl: true
-
   datasource:
-    url: jdbc:mysql://localhost:3306/bookingdb
+#    url: jdbc:mysql://localhost:3306/bookingdb
     username: root
     password: admin2023
 
   application:
     name: booking-microservice
+  # Cargar perfil de propiedades desde el config server
+  cloud:
+    config:
+      profile: dev
 
 server:
   port: 0

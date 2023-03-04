@@ -1,8 +1,8 @@
 spring:
-  #  datasource:
-  ##    url: jdbc:mysql://localhost:3306/bookingdb
-  #    username: root
-  #    password: admin2023
+  datasource:
+    url: jdbc:mysql://localhost:3306/bookingdb
+    username: root
+    password: admin2023
   application:
     name: booking-microservice
   # Cargar perfil de propiedades desde el config server
